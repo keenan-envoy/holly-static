@@ -7,6 +7,7 @@
  */
 
 var watch = require('gulp-watch')
+var browserSync = require('browser-sync')
 
 /* $ gulp watch */
 gulp.task('watch-static', function () {

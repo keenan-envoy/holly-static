@@ -36,5 +36,8 @@ module.exports = {
       src: srcRoot + '/views',
       output: distRoot + '/views'
     }
+  },
+  devServer: {
+    port: 8000
   }
 }

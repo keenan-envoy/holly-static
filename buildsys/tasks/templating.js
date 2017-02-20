@@ -2,7 +2,7 @@
  * ./buildsys/tasks/templating.js
  * @author Keenan Staffieri
  * ------------------------------------
- * TASK: templating
+ * TASK: Nunjucks Templating
  * 'gulp templating'
  */
 
@@ -22,5 +22,5 @@ gulp.task('templating', function () {
       )
     }))
     .pipe(rename({ extname: '.html' }))
-    .pipe(gulp.dest(config.views.paths.output))
+    .pipe(gulp.dest(config.paths.distRoot))
 })
