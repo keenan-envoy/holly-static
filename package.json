@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/weareenvoy/holly-static#readme",
   "dependencies": {
-    "envoy-holly": "^0.0.2"
+    "envoy-holly": "^0.0.2",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "nunjucks": "^3.0.0"
   }
 }

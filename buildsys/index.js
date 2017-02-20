@@ -15,7 +15,7 @@ if (fs.existsSync(tasksPath)) {
   var tasks = fs.readdirSync(tasksPath)
   tasks.forEach(function (task) {
     if (/\.js/.test(task)) {
-      console.log(`holly-craft: Requiring task ${task}...`)
+      console.log(`holly-static: Requiring task ${task}...`)
       require(`./tasks/${task}`)
     }
   })

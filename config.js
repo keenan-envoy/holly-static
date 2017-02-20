@@ -30,5 +30,11 @@ module.exports = {
       src: srcRoot + '/scripts',
       output: distRoot + '/js'
     }
+  },
+  views: {
+    paths: {
+      src: srcRoot + '/views',
+      output: distRoot + '/views'
+    }
   }
 }

@@ -4,4 +4,7 @@
  * @author Keenan Staffieri
  */
 
-module.exports = []
+module.exports = [
+  'templating',
+  'watch-static'
+]
