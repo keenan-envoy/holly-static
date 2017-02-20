@@ -10,7 +10,8 @@ var browserSync = require('browser-sync')
 
 /* $ gulp serve */
 gulp.task('serve', function () {
-  return browserSync.init({
+  if (env === 'dev') {
+    return browserSync.init({
       server: {
         baseDir: [config.paths.distRoot, './node_modules']
       },
@@ -19,4 +20,5 @@ gulp.task('serve', function () {
       logPrefix: 'Holly-Static',
       injectChanges: true
     })
+  }
 })

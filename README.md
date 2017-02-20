@@ -25,6 +25,8 @@ After installing **holly**, the following entries should be added to the project
         /dist
         /node_modules
 
+Navigate to `http://localhost:8000` to view the site. 
+
 ## Usage
 
 * `gulp`

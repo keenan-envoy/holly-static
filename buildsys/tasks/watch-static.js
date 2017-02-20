@@ -12,13 +12,15 @@ var browserSync = require('browser-sync')
 /* $ gulp watch */
 gulp.task('watch-static', function () {
 
-  // Watch for template changes
-  watch([
-    config.paths.srcRoot + '/*.njk',
-    config.views.paths.src + '/**/*.njk'
-  ], {
-    name: 'Templates Watcher'
-  }, function () {
-    gulp.start('templating')
-  })
+  if (env === 'dev') {
+    // Watch for template changes
+    watch([
+      config.paths.srcRoot + '/*.njk',
+      config.views.paths.src + '/**/*.njk'
+    ], {
+      name: 'Templates Watcher'
+    }, function () {
+      gulp.start('templating')
+    })
+  }
 })
